@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>&#127922 Yahtzee!</title>
+</head>
+<body>
+    <header>
+        <div class="logo">&#127922 Yahtzee!</div>
+        <div class="topRight">&#9856 &#9857 &#9858 &#9859 &#9860 &#9861</div>
+    </header>
+    <main id="app">
+        <div class="values">
+            <div class="upperSection">
+                <ul>
+                    <li v-for="dice in dices_upper">
+                        <label for="dice">{{dice.name}}</label>
+                        <input v-on:change="add" v-model="dice.value" type="text" name="value" id="">
+                    </li>
+                </ul>
+            </div>
+            <div class="lowerSection">
+                <ul>
+                    <li v-for="dice in dices_lower">
+                        <label for="dice">{{dice.name}}</label>
+                        <input v-on:change="add" v-model="dice.value" type="text" name="value" id="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="points">
+            <!-- <button @click="add(dices_upper)">test</button> -->
+            <ul>
+                <li>Bonus Points: {{upper_points}}/63</li>
+                <li>Upper Points: {{upper_points}}</li>
+                <li>Lower Points: {{lower_points}}</li>
+                <li>Total Points: {{total_points}}</li>
+            </ul>
+        </div>
+    </main>
+        
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

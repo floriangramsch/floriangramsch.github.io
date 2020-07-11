@@ -2,4 +2,4 @@
 
 
 * [X] Create Main Page
-* [X] Learn View
+* [X] Learn Vue
