@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+head {
+    text-align: center;
+}
+
+main div {
+    margin: 1rem;
+}
+
+footer {
+    bottom: 0;
+}
