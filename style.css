@@ -98,6 +98,7 @@ main, p {
 }
 
 #search {
+    text-align: center;
     height: 44px;
     grid-area: search;
     width: 90%;
