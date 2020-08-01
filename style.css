@@ -3,8 +3,20 @@ html {
     min-height: 100%;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    color: #5F6368;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 /* HEADER */
 nav {
+    margin: 0.2rem 1rem;
+    margin-right: 2rem;
     display: grid;
     grid-template-columns: 50px 50px 1fr 50px 50px 50px 50px;
     grid-template-rows: 50px;
@@ -13,7 +25,6 @@ nav {
 
 a, p {
     text-decoration: none;
-    color: #000;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
 }
@@ -52,6 +63,14 @@ a, p {
     grid-area: signIn;
     justify-self: center;
     align-self: center;
+    background-color: #4285f4;
+    height: 30px;
+    line-height: 28px;
+    width: 60px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border: 1px solid #4285f4;
 }
 
 /* MAIN */
@@ -67,36 +86,61 @@ main {
     ;
 }
 
+main, p {
+    color: black;
+}
+
 #logo {
     grid-area: logo;
     justify-self: center;
     align-self: end;
+    padding-bottom: 1.5rem;
 }
 
 #search {
-    height: 30px;
+    height: 44px;
     grid-area: search;
-    /* justify-self: center; */
+    width: 90%;
+    justify-self: center;
     align-self: center;
+    border: 1px solid lightgray;
+    border-radius: 2rem;
+    box-shadow: 8px 8px 10px gray;
+}
+
+#search:focus {
+    width: 95%;
+    box-shadow: 8px 8px 10px #4285f4;
 }
 
 #flexbox {
     grid-area: flexbox;
-    /* display: flexbox; */
     justify-self: center;
     align-self: center;
 }
 
 #google-search-btn {
-    grid-area: google-search-btn;
-    justify-self: center;
-    align-self: center;
+    border: none;
+    font-size: 15px;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    margin: 0 0.25rem;
+}
+#google-search-btn:hover {
+    border: 1px solid rgba(0, 0, 0, 0.226);
+    padding: 0.5rem 1.2rem;
 }
 
 #feelingLucky {
-    grid-area: feelingLucky;
-    justify-self: center;
-    align-self: center;
+    border: none;
+    font-size: 15px;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    margin: 0 0.25rem;
+}
+#feelingLucky:hover {
+    border: 1px solid rgba(0, 0, 0, 0.226);
+    padding: 0.5rem 1.2rem;
 }
 
 #google-text {
@@ -110,9 +154,10 @@ footer {
     font-size: 14px;
     display: flex;
     justify-content: space-between;
-    width: 98%;
+    width: 100%;
     position:absolute;
     bottom:0;
+    background-color: rgba(0,0,0,0.1);
 }
 
 #left-footer {
