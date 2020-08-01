@@ -1,13 +1,163 @@
-* {
-    margin: 0;
-    padding: 0;
-    text-align: center;
+html {
+    height: 100%;
+    min-height: 100%;
 }
 
-main div {
-    margin: 1rem;
+/* HEADER */
+nav {
+    display: grid;
+    grid-template-columns: 50px 50px 1fr 50px 50px 50px 50px;
+    grid-template-rows: 50px;
+    grid-template-areas: "about store . gmail images menu signIn";
 }
 
+a, p {
+    text-decoration: none;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+#about{
+    grid-area: about;
+    justify-self: center;
+    align-self: center;
+}
+
+#store{
+    grid-area: store;
+    justify-self: center;
+    align-self: center;
+}
+
+#gmail{
+    grid-area: gmail;
+    justify-self: center;
+    align-self: center;
+}
+
+#images{
+    grid-area: images;
+    justify-self: center;
+    align-self: center;
+}
+
+#menu{
+    grid-area: menu;
+    justify-self: center;
+    align-self: center;
+}
+
+#signIn{
+    grid-area: signIn;
+    justify-self: center;
+    align-self: center;
+}
+
+/* MAIN */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px 70px 70px 250px;
+    grid-template-areas: 
+    ". logo ."
+    ". search ."
+    ". flexbox ."
+    ". google-text ."
+    ;
+}
+
+#logo {
+    grid-area: logo;
+    justify-self: center;
+    align-self: end;
+}
+
+#search {
+    height: 30px;
+    grid-area: search;
+    /* justify-self: center; */
+    align-self: center;
+}
+
+#flexbox {
+    grid-area: flexbox;
+    /* display: flexbox; */
+    justify-self: center;
+    align-self: center;
+}
+
+#google-search-btn {
+    grid-area: google-search-btn;
+    justify-self: center;
+    align-self: center;
+}
+
+#feelingLucky {
+    grid-area: feelingLucky;
+    justify-self: center;
+    align-self: center;
+}
+
+#google-text {
+    grid-area: google-text;
+    justify-self: center;
+    /* align-self: center; */
+}
+
+/* FOOTER */
 footer {
-    bottom: 0;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    width: 98%;
+    position:absolute;
+    bottom:0;
+}
+
+#left-footer {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 50px;
+    grid-template-areas: "main todo yathzee";
+    padding-left: 1em;
+}
+
+#right-footer {
+    display: grid;
+    grid-template-columns: 70px 70px 70px;
+    grid-template-rows: 50px;
+    grid-template-areas: "test advertising settings";
+    padding-left: 1em;
+}
+
+#main {
+    grid-area: main;
+    justify-self: center;
+    align-self: center;
+}
+#todo {
+    grid-area: todo;
+    justify-self: center;
+    align-self: center;
+}
+#yathzee {
+    grid-area: yathzee;
+    justify-self: center;
+    align-self: center;
+}
+#test {
+    grid-area: test;
+    justify-self: center;
+    align-self: center;
+}
+#advertising {
+    grid-area: advertising;
+    justify-self: center;
+    align-self: center;
+}
+#settings {
+    grid-area: settings;
+    justify-self: center;
+    align-self: center;
 }
