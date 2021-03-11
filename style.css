@@ -165,7 +165,7 @@ footer {
     display: grid;
     grid-template-columns: 100px 100px 100px;
     grid-template-rows: 50px;
-    grid-template-areas: "main todo yathzee";
+    grid-template-areas: "main todo yathzee first_page";
     padding-left: 1em;
 }
 
@@ -189,6 +189,11 @@ footer {
 }
 #yathzee {
     grid-area: yathzee;
+    justify-self: center;
+    align-self: center;
+}
+#first_page {
+    grid-area: first_page;
     justify-self: center;
     align-self: center;
 }
