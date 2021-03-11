@@ -1,0 +1,33 @@
+#B {position:fixed;
+		top:80%;
+		left:0%;}
+.Links {position:absolute;
+		top:-17px;
+		left:5px;}
+.ueberschrift {	text-align:center; 
+				width:400px;
+				margin:1px;
+				color:green;
+				background-color:darkblue;
+				padding-top:10px;
+				padding-bottom:10px;
+				border-color:blue;
+				border-width:10;
+				border-style:dashed;}
+.list {	position:absolute;
+		top:90px;
+		left:5px;}
+body {	color:white;
+		background-color:cyan;
+		background-image:url(Sources/Abs.jpg);
+		background-size:100%;}
+ul {font-weight:bold;
+	list-style-type:katakana;}
+a:link {color:cyan;
+		text-decoration:none;}
+a:visited {	color:cyan;
+			text-decoration:none;}
+a:hover {text-decoration:underline;
+		font-weight:bold;}
+a:active {background-color:blue}
+
