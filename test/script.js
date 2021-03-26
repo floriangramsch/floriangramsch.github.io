@@ -53,14 +53,31 @@ function create_list(ding) {
     document.getElementById("loop").innerHTML = text + "</ul>";
 }
 
-var player = true;
+var player_turn = true;
+
+function win(grid) {
+    
+}
+
 function set_tiktaktoe() {
+    var grid = [
+        [document.getElementById("1").value, document.getElementById("2").value, document.getElementById("3").value],
+        [document.getElementById("4").value, document.getElementById("5").value, document.getElementById("6").value],
+        [document.getElementById("7").value, document.getElementById("8").value, document.getElementById("9").value]
+    ];
     var place = document.getElementById("tiktaktoe_input").value;
-    console.log(typeof place);
-    if (player) {
+    place = parseInt(place);
+    if (place <= 3){
+        place += 6
+    } else if (place >= 7){
+        place -= 6
+    }
+    place = String(place);
+
+    if (player_turn) {
         document.getElementById(place).innerHTML = "X";
     } else {
         document.getElementById(place).innerHTML = "O";
     }
-    player = !player;
+    player_turn = !player_turn;
 }

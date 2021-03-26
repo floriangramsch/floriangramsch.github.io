@@ -1,11 +1,5 @@
-.first_line {
-    float: left;
-}
-
-.second_line {
-    float: left;
-}
-
-.third_line {
-    float: left;
-}
+table, th, td {
+    border: 2px solid black;
+    padding: 20px;
+    
+  }
